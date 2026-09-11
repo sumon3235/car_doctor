@@ -26,7 +26,8 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
-        {children}
+        {/* Keep the main website content within the 1140px layout width. */}
+        <main className="mx-auto w-full flex-1">{children}</main>
       </body>
     </html>
   );
